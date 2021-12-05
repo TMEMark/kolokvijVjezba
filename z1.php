@@ -21,6 +21,36 @@
                 echo $i . "</br>";
             }
         }
+
+        if(isset($_GET["submit2"]) && $_GET["submit2"]=="Varijanta2"){
+            
+            for ($i=$broj; $i>=1 ; $i--) { 
+                for($x=$i; $x>=1 ; $x--){
+                    echo $x . ".";
+                }
+                echo "</br>";
+            }
+        }
+
+        if(isset($_GET["submit3"]) && $_GET["submit3"]=="Varijanta3"){
+            
+            for ($i=$broj; $i>=1 ; $i--) { 
+                for($x=$i; $x>=1 ; $x--){
+                    echo $x . ".";
+                }
+                
+                echo "</br>";
+            }
+
+
+            for($g=$i+2; $g<=$broj ;$g++){
+                for($y=$g; $y>=1 ;$y--){
+                    echo $y . ".";
+                };
+                echo "<br>";
+            }    
+        }
+
     ?>
 </body>
 </html>
